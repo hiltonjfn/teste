@@ -5,7 +5,7 @@
 
       reader.onload = function(e) {
         var content = e.target.result;
-        document.getElementById('file-content').textContent = content;
+        document.getElementById('file-content').innerHTML = content;
       };
 
       reader.readAsText(file);
